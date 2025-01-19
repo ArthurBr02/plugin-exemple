@@ -1,0 +1,4 @@
+name: plugin-exemple
+version: '1.0-SNAPSHOT'
+main: fr.arthurbr02.pluginExemple.PluginExemple
+api-version: '1.21'
