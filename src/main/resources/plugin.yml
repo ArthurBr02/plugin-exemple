@@ -2,3 +2,15 @@ name: plugin-exemple
 version: '1.0-SNAPSHOT'
 main: fr.arthurbr02.pluginExemple.PluginExemple
 api-version: '1.21'
+commands:
+    exemple:
+        description: Commande d'exemple
+        usage: /exemple
+        permission: plugin-exemple.command.exemple
+        aliases: [ex]
+        permission-message: Vous n'avez pas la permission d'utiliser cette commande
+
+permissions:
+    plugin-exemple.command.exemple:
+        description: Permet d'utiliser la commande /exemple
+        default: true
