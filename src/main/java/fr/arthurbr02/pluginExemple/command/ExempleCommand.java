@@ -12,15 +12,17 @@ public class ExempleCommand implements BasicCommand {
 
     @Override
     public void execute(CommandSourceStack stack, String[] args) {
-        System.out.println("Commande exemple !");
         if (stack.getExecutor() instanceof Player) {
+            // Si l'exécuteur est un joueur
             Player player = (Player) stack.getExecutor();
 
+            // On affiche tous les arguments de la commande: par ex /exemple arg1 arg2 arg3
             StringBuilder argsStr = new StringBuilder();
             for (String arg : args) {
                 argsStr.append(arg).append(" ");
             }
 
+            // On envoie un message au joueur
             player.sendMessage("[Plugin Exemple] Commande exemple !\nArguments : " + argsStr);
         }
     }
